@@ -2,7 +2,7 @@
 
 In this repository I collect descriptions and basic examples on how to setup different new **things and tools I try out**.
 That's mainly for my own reference, but maybe this helps someone else too.
-Please leave a star if you find this useful, get in contact with me, or file an issue if there is something wrong or missing - and I'm pretty sure it is.
+Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find this useful, get in contact with [me](https://github.com/ramdacxp), or [file an issue](https://github.com/ramdacxp/Tryout/issues/new) if there is something wrong or missing - and I'm pretty sure it is.
 
 [Let's get started](GettingStarted.md)!
 
@@ -19,7 +19,7 @@ Please leave a star if you find this useful, get in contact with me, or file an 
 
 ## Smart Home / IoT
 
-* Phoscon Gateway - central Zigbee for Hue, IKEA and Osram
+* Phoscon - Zigbee gateway for Hue, IKEA and Osram
 * MySQL database on Synology NAS as central data store
 * Node RED
 * ESP8266 / ESP32
