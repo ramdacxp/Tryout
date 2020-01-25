@@ -4,7 +4,7 @@ This repository contains descriptions and basic examples for different topics I 
 First of all, you can read all this online on GitHub at <https://github.com/ramdacxp/Tryout> and you're done.But most likely you would like to download the samples and try those out on your own machine. *So read on...*
 
 I run all this on Windows 10 desktop PCs. My main setup includes git for version control, Node.JS for the web stack, the DotNet SDK for real programming, and Visual Studio Code as my one-for-all editor.
-The [basic tooling setup](tools\BasicToolingSetup.md) is described [here](tools\BasicToolingSetup.md).
+The [basic tooling setup](tools/BasicToolingSetup.md) is described [here](tools/BasicToolingSetup.md).
 
 ## Download this repo
 

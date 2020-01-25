@@ -8,8 +8,8 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 
 ## Tools
 
-* [Basic Tooling Setup](tools\BasicToolingSetup.md) (git, Node.JS, DotNet SDK)
-* Visual Studio Code
+* [Basic Tooling Setup](tools/BasicToolingSetup.md) (git, Node.JS, DotNet SDK)
+* [Visual Studio Code](tools/VisualStudioCode.md)
 
 ## Raspberry PI / Docker
 
