@@ -4,11 +4,11 @@ In this repository I collect descriptions and basic examples on how to setup dif
 That's mainly for my own reference, but maybe this helps someone else too.
 Please leave a star if you find this useful, get in contact with me, or file an issue if there is something wrong or missing - and I'm pretty sure it is.
 
-Getting started
+[Let's get started](GettingStarted.md)!
 
 ## Tools
 
-* Basic Tooling Setup (git, Node, DotNet SDK)
+* [Basic Tooling Setup](tools\BasicToolingSetup.md) (git, Node.JS, DotNet SDK)
 * Visual Studio Code
 
 ## Raspberry PI / Docker
