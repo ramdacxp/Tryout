@@ -11,4 +11,4 @@ The sub folders in this repo contain Platform IO projects for different hardware
 
 To get started, open the folder in VS Code with the "File > Open folder ..." command.
 
-* [14 Segment LED Modul via I2C / HT16K33](14-segment\README.md)
+* [14 Segment LED Modul via I2C / HT16K33](14-segment/README.md)
