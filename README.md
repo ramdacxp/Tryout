@@ -23,7 +23,8 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 * MySQL database on Synology NAS as central data store
 * Node RED
 * ESP8266 / ESP32
-* Platform IO
+* [Platform IO](iot\platform-io\README.md)
+  * [14 Segment LED Modul via I2C / HT16K33](iot\platform-io\14-segment\README.md)
 
 ## DotNet Core
 
