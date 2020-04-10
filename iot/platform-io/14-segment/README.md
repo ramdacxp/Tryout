@@ -59,6 +59,9 @@ alpha4.writeDigitRaw(1, 0x3FFF);  // all on
 alpha4.writeDigitAscii(2, 'A');
 alpha4.writeDigitAscii(3, 'Z');
 alpha4.writeDisplay();
+
+alpha4.blinkRate(0);      // 0...3 permanent, fast/medium/slow blinking
+alpha4.setBrightness(0);  // 0..15 dark ... bright
 ```
 
 ## Libraries and Platform IO settings
