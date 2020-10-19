@@ -10,6 +10,7 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 
 * [Basic Tooling Setup](tools/BasicToolingSetup.md) (git, Node.JS, DotNet SDK)
 * [Visual Studio Code](tools/VisualStudioCode.md)
+* [SSH Setup](tools/SshSetup.md) (to remote login w/o password)
 
 ## Raspberry PI / Docker
 
