@@ -37,3 +37,11 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 * <https://github.com/miguelbalboa/rfid/blob/master/examples/DumpInfo/DumpInfo.ino>
 * <https://blog.jeronimus.net/2018/03/rfid-and-wemos-d1-mini-1.html>
 * <https://github.com/Jorgen-VikingGod/ESP8266-MFRC522>
+
+## Sample Output
+
+Sample output of `mfrc522.PCD_DumpVersionToSerial();` (see `src\main.cpp`):
+
+```text
+Firmware Version: 0x92 = v2.0
+```
