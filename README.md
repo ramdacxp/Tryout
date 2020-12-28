@@ -26,6 +26,8 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 * ESP8266 / ESP32
 * [Platform IO](iot/platform-io/README.md)
   * [14 Segment LED Modul via I2C / HT16K33](iot/platform-io/14-segment/README.md)
+  * [RC522 RFID Reader](iot/platform-io/rfid/README.md)
+  * [LCD 162C BL (non I2C) on D1Mini](iot/platform-io/lcd/README.md)
 
 ## DotNet Core
 
@@ -40,3 +42,4 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 * Prime NG
 * Graph QL
 * Element & Element for Angular
+* Tailwind CSS
