@@ -11,6 +11,7 @@ The sub folders in this repo contain Platform IO projects for different hardware
 
 To get started, open the folder in VS Code with the "File > Open folder ..." command.
 
-* [14 Segment LED Modul via I2C / HT16K33](14-segment/README.md)
-* [RC522 RFID Reader](rfid/README.md)
-* [LCD 162C BL (non I2C) on D1Mini](lcd/README.md)
+* [14 Segment LED Modul HT16K33](14-segment/README.md) (I2C)
+* [RC522 RFID Reader](rfid/README.md) (SPI)
+* [LCD 162C BL](lcd/README.md) (4bit data bus)
+* [8x8 Matrix Display](matrix/README.md) (SPI)

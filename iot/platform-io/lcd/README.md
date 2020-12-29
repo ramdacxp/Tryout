@@ -1,4 +1,4 @@
-# LCD Display 162C BL (non I2C)
+# LCD Display 162C BL (4-Bit Mode)
 
 ## Hardware Info
 
@@ -11,8 +11,8 @@ Ordered on 3/2015 at Reichelt
 
 ## Pin Layout
 
-Pin layout with example when connected to D1 Mini.
-As D1 Mini GPIO 2 (D4) is connected to built in LED, this is not used.
+Pin layout example when connected to a WeMos D1 Mini.  
+As the pin GPIO 2 (D4) of the D1 Mini is connected to the built-in LED, it is not used.
 
 | Pin LCD | Description         | Connected to                 | Code |
 |---------|---------------------|------------------------------|------|
@@ -36,7 +36,7 @@ As D1 Mini GPIO 2 (D4) is connected to built in LED, this is not used.
 ![Pin Layout](schaltung.png)
 
 ```cpp
-// D1 Mini
+// D1 Mini mapping of data pins (Dx as printed on the board) to GPIO numbers
 #define D1MINI_D0 16
 #define D1MINI_D1 5
 #define D1MINI_D2 4
