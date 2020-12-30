@@ -14,4 +14,5 @@ To get started, open the folder in VS Code with the "File > Open folder ..." com
 * [14 Segment LED Modul HT16K33](14-segment/README.md) (I2C)
 * [RC522 RFID Reader](rfid/README.md) (SPI)
 * [LCD 162C BL](lcd/README.md) (4bit data bus)
+* [LCD 162C BL](lcd-i2c/README.md) (I2C)
 * [8x8 Matrix Display](matrix/README.md) (SPI)

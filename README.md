@@ -25,10 +25,11 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 * Node RED
 * ESP8266 / ESP32
 * [Platform IO](iot/platform-io/README.md)
-  * [14 Segment LED Modul HT16K33](iot/14-segment/README.md) (I2C)
-  * [RC522 RFID Reader](iot/rfid/README.md) (SPI)
-  * [LCD 162C BL](iot/lcd/README.md) (4bit data bus)
-  * [8x8 Matrix Display](iot/matrix/README.md) (SPI)
+  * [14 Segment LED Modul HT16K33](iot/platform-io/14-segment/README.md) (I2C)
+  * [RC522 RFID Reader](iot/platform-io/rfid/README.md) (SPI)
+  * [LCD 162C BL](iot/platform-io/lcd/README.md) (4bit data bus)
+  * [LCD 162C BL](iot/platform-io/lcd-i2c/README.md) (I2C)
+  * [8x8 Matrix Display](iot/platform-io/matrix/README.md) (SPI)
 
 ## DotNet Core
 

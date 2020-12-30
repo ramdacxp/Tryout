@@ -4,10 +4,7 @@
 
 ![Hardware](hardware.png)
 
-Ordered on 3/2015 at Reichelt
-
-* [LCD 162C BL LCD-Modul, 2x16, H:5,6mm, bl/ws, m.Bel.](http://www.reichelt.de/LCD-162C-BL/3/index.html?&ACTION=3&LA=446&ARTICLE=53941&artnr=LCD+162C+BL&SEARCH=HD44780)
-* Price: 11 EUR
+* [LCD 162C BL LCD-Modul](https://www.reichelt.de/lcd-modul-2x16-h-5-6mm-bl-ws-m-bel--lcd-162c-bl-p53941.html) (Reichelt, 11 EUR)
 
 ## Pin Layout
 
@@ -60,6 +57,12 @@ LiquidCrystal lcd(LCD_RS, LCD_E, LCD_D4, LCD_D5, LCD_D6, LCD_D7);
 lcd.begin(16, 2);
 lcd.print("Hallo Test");
 ```
+
+## Char map
+
+Use `lcd.print("\xE1");` to output the german umlaut `ä`.
+
+![Charmap](charmap.png)
 
 ## Code Samples
 
