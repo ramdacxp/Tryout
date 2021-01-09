@@ -57,7 +57,7 @@ Open Raspi Config via `sudo raspi-config` and adapt the following settings:
   * **D1 Resolution** - Set something other than `Default` if VNC shall be used without an attached HDMI device (otherwise later on VNC will display only a message *"Cannot currently show the desktop"*)
 * **3 Interface Options**
   * **P3 VNC** - Enable the VNC Server
-* **5 Localisation Options** - Set your Language, time zone and keyboard layout
+* **5 Localization Options** - Set your Language, time zone and keyboard layout
 * **6 Advanced Options**
   * **A1 Expand Filesystem** - Use all of the SD card to increase the lifetime of the card
 

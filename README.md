@@ -12,10 +12,10 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 * [Visual Studio Code](tools/VisualStudioCode.md)
 * [SSH Setup](tools/SshSetup.md) (to remote login w/o password)
 
-## Raspberry PI / Docker
+## Raspberry Pi / Docker
 
-* Raspberry Pi headless ssh setup
-* Raspberry Pi as Docker server
+* [Raspberry Pi headless setup](raspberry/Headless.md) (SSH, VNC)
+* [Docker on Raspberry Pi](raspberry/Docker.md)
 * Portainer
 
 ## Smart Home / IoT
