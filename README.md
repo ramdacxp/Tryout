@@ -15,12 +15,11 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
 ## Raspberry Pi / Docker
 
 * [Raspberry Pi headless setup](raspberry/Headless.md) (SSH, VNC)
-* [Docker on Raspberry Pi](raspberry/Docker.md)
-* Portainer
+* [Docker on Raspberry Pi](raspberry/Docker.md) (incl. Portainer UI)
 
 ## Smart Home / IoT
 
-* Phoscon - Zigbee gateway for Hue, IKEA and Osram
+* Phoscon - ZigBee gateway for Hue, IKEA and Osram
 * MySQL database on Synology NAS as central data store
 * Node RED
 * ESP8266 / ESP32
