@@ -16,3 +16,4 @@ To get started, open the folder in VS Code with the "File > Open folder ..." com
 * [LCD 162C BL](lcd/README.md) (4bit data bus)
 * [LCD 162C BL](lcd-i2c/README.md) (I2C)
 * [8x8 Matrix Display](matrix/README.md) (SPI)
+* [WS2812 Multicolor-LED](ws2812/README.md)

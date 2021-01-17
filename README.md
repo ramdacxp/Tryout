@@ -29,6 +29,7 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
   * [LCD 162C BL](iot/platform-io/lcd/README.md) (4bit data bus)
   * [LCD 162C BL](iot/platform-io/lcd-i2c/README.md) (I2C)
   * [8x8 Matrix Display](iot/platform-io/matrix/README.md) (SPI)
+  * [WS2812 Multicolor-LED](iot/platform-io/ws2812/README.md)
 
 ## DotNet Core
 
