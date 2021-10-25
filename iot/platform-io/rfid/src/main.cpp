@@ -3,14 +3,14 @@
 #include <SPI.h>
 #include <MFRC522.h>
 
-#define RST_PIN 0 // 3
-#define SS_PIN 15 // 8
+#define RST_PIN D3 // D3 = GPIO 0
+#define SS_PIN D8  // D8 = GPIO15
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   while (!Serial)
   {
     delay(5);
@@ -26,13 +26,14 @@ void setup()
   Serial.print(F("RFID ... "));
   mfrc522.PCD_Init();
   delay(4);
+  Serial.println(F("Done."));
 
-  Serial.print(F("Max-Antenna-Gain ("));
-  Serial.print(mfrc522.RxGain_max);
-  Serial.print(F(") ... "));
+  Serial.print(F("Max antenna gain: "));
+  Serial.println(mfrc522.RxGain_max);
+  Serial.print(F("Setting max gain ..."));
   mfrc522.PCD_SetAntennaGain(mfrc522.RxGain_max);
 
-  Serial.print(F("Gain: "));
+  Serial.print(F(" Current gain now: "));
   byte gain = mfrc522.PCD_GetAntennaGain();
   Serial.println(gain);
 
@@ -40,17 +41,13 @@ void setup()
   Serial.println(F("Init done."));
 }
 
-// Tries to read card uid.
-// Returns empty string if no or same card present.
-String getCardId()
+// Returns the card UID as string.
+// Those methods must have be called successfully before!
+// - rfid.PICC_IsNewCardPresent()
+// - rfid.PICC_ReadCardSerial()
+String getCardUid()
 {
   String id = "";
-
-  if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial())
-  {
-    return id;
-  }
-
   for (byte i = 0; i < mfrc522.uid.size; i++)
   {
     if (mfrc522.uid.uidByte[i] < 0x10)
@@ -62,28 +59,21 @@ String getCardId()
   return id;
 }
 
-ulong lastEvent = 0;
-String cardId = "";
-
-bool checkTriggerCardEvent()
+// Returns true if UID of new card was read.
+// Call getCardUid() to get it as string.
+bool readCardInfo()
 {
-  String currentCard = getCardId();
-  if (currentCard != "")
-  {
-    ulong ts = millis();
-    if (ts > lastEvent + 5000)
-    {
-      lastEvent = ts;
-      Serial.print(F("Card: "));
-      Serial.println(currentCard);
-      return true;
-    }
-  }
-  return false;
+  return mfrc522.PICC_IsNewCardPresent() && mfrc522.PICC_ReadCardSerial();
 }
 
 void loop()
 {
-  checkTriggerCardEvent();
-  delay(1000);
+  if (readCardInfo())
+  {
+    String id = getCardUid();
+    Serial.println("Card UID: " + id);
+
+    // wait some time to debounce
+    delay(1000);
+  }
 }
