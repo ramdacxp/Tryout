@@ -30,6 +30,8 @@ Please [leave a star](https://github.com/ramdacxp/Tryout/stargazers) if you find
   * [LCD 162C BL](iot/platform-io/lcd-i2c/README.md) (I2C)
   * [8x8 Matrix Display](iot/platform-io/matrix/README.md) (SPI)
   * [WS2812 Multicolor-LED](iot/platform-io/ws2812/README.md)
+* [ESPHome](iot/esphome/README.md)
+  * [ESP32 C3 Super Mini](iot/esphome/esp32-c3-supermini/README.md)
 
 ## DotNet Core
 

@@ -1,0 +1,55 @@
+esphome:
+  name: esphome-c3supermini
+  friendly_name: esphome-c3supermini
+  name_add_mac_suffix: false
+
+esp32:
+  # board: esp32-c3-devkitm-1
+  board: esp32-c3-devkitc-02
+  #board: esp32dev
+  framework:
+    type: esp-idf
+  variant: esp32c3
+
+# esp8266:
+#   board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  # encryption:
+  #   key: "5WfEZV/PDwSThFu9VLzOgXsmK9+QEJS5FJl49SAa+yo="
+
+ota:
+  - platform: esphome
+#    password: "2814e92afbb0c87f343f365d746b603b"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "C3SuperminiFallback"
+    password: "i7bRLSbMzC5a"
+
+captive_portal:
+
+web_server:
+
+# https://community.home-assistant.io/t/how-to-blink-led-on-an-esp-output-in-esphome-integration/541620/2
+# https://esphome.io/components/switch/gpio.html#momentary-switch
+
+# switch:
+#   - platform: gpio
+#     pin: GPIO08
+#     id: myLed
+#     name: "LED"
+#     on_turn_on:
+#     - delay: 10000ms
+#     - switch.turn_off: myLed
+#     on_turn_off:
+#     - delay: 10000ms
+#     - switch.turn_on: myLed

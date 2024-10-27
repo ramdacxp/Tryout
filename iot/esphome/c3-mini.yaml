@@ -1,0 +1,39 @@
+esphome:
+  name: "esp32c3mini"
+  friendly_name: C3
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  # encryption:
+  #   key: "1bpwTpaWXIUiWVzrGZhYKm1W49ark5kfKEdejMD67og="
+
+ota:
+  - platform: esphome
+#    password: "ceb1e74ea4f7447e00ef407727ceea44"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "C3 Fallback Hotspot"
+    password: "wlan-geheim"
+
+captive_portal:
+
+web_server:
+
+# blink slow: warning; blink fast: error; otherwise off
+status_led:
+  pin:
+    number: GPIO08
+    inverted: true
