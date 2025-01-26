@@ -8,9 +8,15 @@
 
 ## Hub75
 
+Non-DMA:
+
 * https://github.com/2dom/PxMatrix
 
-* DMA: https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA
+* https://github.com/rasafitri/matrix-example
+
+DMA:
+
+* https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA
   * PINS: https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA/blob/master/src/platforms/esp32/esp32-default-pins.hpp
 
 # CP2102 Win 11 Treiber

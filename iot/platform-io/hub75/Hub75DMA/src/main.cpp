@@ -64,14 +64,15 @@ void setup()
   dma_display->drawLine(127, 63, 127, 0, dma_display->color444(0, 15, 15));
 
   // Text
-  dma_display->setTextSize(1);     // size 1 == 8 pixels high
-  dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
-  dma_display->setCursor(5, 8);    // start at top left, with 8 pixel of spacing
-  dma_display->print("Mischa möchte");
+  dma_display->setTextSize(1); // size 1 == 8 pixels high
+  // dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
+  dma_display->setCursor(0, 2); // start at top left, with 8 pixel of spacing
+  dma_display->print(" ACHTUNG\n Heute ist Mischa\n im Home-Office!");
 
   dma_display->setTextSize(2);
-  dma_display->setCursor(32, 32);
-  dma_display->print("Testen");
+  dma_display->setCursor(4, 40);
+  dma_display->setTextColor(dma_display->color444(15, 0, 15));
+  dma_display->print("Ruhe bitte");
 
   // End
   dma_display->drawPixel(0, 0, dma_display->color444(15, 15, 15));
