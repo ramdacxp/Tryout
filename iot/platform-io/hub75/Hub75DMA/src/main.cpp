@@ -56,7 +56,26 @@ void setup()
 
   // line red
   dma_display->drawLine(0, 0, dma_display->width() - 1, dma_display->height() - 1, dma_display->color444(15, 0, 0));
-  delay(500);
+
+  // border
+  dma_display->drawLine(0, 0, 0, 63, dma_display->color444(0, 15, 0));
+  dma_display->drawLine(0, 0, 63, 0, dma_display->color444(0, 0, 15));
+  dma_display->drawLine(63, 63, 0, 63, dma_display->color444(15, 15, 0));
+  dma_display->drawLine(63, 63, 63, 0, dma_display->color444(0, 15, 15));
+
+  // Text
+  dma_display->setTextSize(1);     // size 1 == 8 pixels high
+  dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
+  dma_display->setCursor(5, 8);    // start at top left, with 8 pixel of spacing
+  dma_display->print("Mischa");
+
+  dma_display->setTextSize(2);
+  dma_display->setCursor(10, 32);
+  dma_display->print("Test");
+
+  // End
+  dma_display->drawPixel(0, 0, dma_display->color444(15, 15, 15));
+  dma_display->drawPixel(dma_display->width() - 1, dma_display->height() - 1, dma_display->color444(15, 0, 15));
 }
 
 void loop()
