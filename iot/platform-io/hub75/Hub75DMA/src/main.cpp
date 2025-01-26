@@ -4,7 +4,7 @@
 
 #define PANEL_RES_X 64 // Number of pixels wide of each INDIVIDUAL panel module.
 #define PANEL_RES_Y 64 // 32     // Number of pixels tall of each INDIVIDUAL panel module.
-#define PANEL_CHAIN 1  // Total number of panels chained one to another
+#define PANEL_CHAIN 2  // Total number of panels chained one to another
 
 // https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA?tab=readme-ov-file#2-wiring-the-esp32-to-an-led-matrix-panel
 #define R1_PIN 25
@@ -59,19 +59,19 @@ void setup()
 
   // border
   dma_display->drawLine(0, 0, 0, 63, dma_display->color444(0, 15, 0));
-  dma_display->drawLine(0, 0, 63, 0, dma_display->color444(0, 0, 15));
-  dma_display->drawLine(63, 63, 0, 63, dma_display->color444(15, 15, 0));
-  dma_display->drawLine(63, 63, 63, 0, dma_display->color444(0, 15, 15));
+  dma_display->drawLine(0, 0, 127, 0, dma_display->color444(0, 0, 15));
+  dma_display->drawLine(127, 63, 0, 63, dma_display->color444(15, 15, 0));
+  dma_display->drawLine(127, 63, 127, 0, dma_display->color444(0, 15, 15));
 
   // Text
   dma_display->setTextSize(1);     // size 1 == 8 pixels high
   dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
   dma_display->setCursor(5, 8);    // start at top left, with 8 pixel of spacing
-  dma_display->print("Mischa");
+  dma_display->print("Mischa möchte");
 
   dma_display->setTextSize(2);
-  dma_display->setCursor(10, 32);
-  dma_display->print("Test");
+  dma_display->setCursor(32, 32);
+  dma_display->print("Testen");
 
   // End
   dma_display->drawPixel(0, 0, dma_display->color444(15, 15, 15));
